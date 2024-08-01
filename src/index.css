@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+@font-face {
+  font-family:'Tall-font' ;
+  src: url(assets/DeliriumNeonNcv-J1AK.ttf);
+}
+@font-face {
+  font-family: "American";
+  src: url(assets/AmericanCaptain-MdEY.otf);
+}
+@font-face {
+  font-family:'Ankh';
+  src: url(assets/AnkhSanctuary-PVK0B.ttf);
+}
+@font-face {
+  font-family: 'Blue-Ocean';
+  src: url(assets/BlueOcean-YzBDa.otf);
+}
+@font-face {
+  font-family: 'Ultimate';
+  src: url(assets/UlminostTrialRegular-OVBaA.ttf);
+}
+@font-face{
+  font-family:'Tall1';
+  src:url(assets/buenos-aires-nf.regular.ttf)
+}
+:root{
+  --smokey-black : #0F0A0A;
+  --Isabelina : #F5EFED;
+  --Blue : #2292A4;
+  --Citrine : #BDBF09;
+  --Cocoa-Brown : #D96C06;
+
+  --orange : #FB5607;
+  --creame : #FFFFB3;
+  --black  : #201E1F;
+  --creame-back : #d4a373;
+  --online : #20c997;
+  --online1 : #29e5ac;
+
+  --Inter : "Inter";
+  --Tuple : "Tulpen One", sans-serif; 
+  --Tall : "Tall-font";
+  --Tall1 : "Tall1";
+  --Ankh : "Ankh";
+  --Blue-Ocean : "Blue-Ocean";
+  --Ultimate : "Ultimate";
+  --American : "American";
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--Inter);
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+body{
+  background-color:var(--creame-back);
+  background-color: #0F0A0A;
+
+}
+.load{
+  animation: lineload 1.5s linear forwards;
+  border: 2px solid var(--creame);
+}
+@keyframes lineload {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.scroll-text {
+    font-family: var(--Ankh);
+    width: 100%;
+    text-align: center;
+    padding: 5px 20px;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.scroll-container {
+  border-radius: 2rem;
+  display: inline-block;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: var(--orange);
+}
+
+.scroll-container:hover{
+    transition: 200ms;
+    color: var(--orange);
+    background-color: #222;
+}
+.scroll-container:hover .scroll-text{
+    animation: scroll-horizontal 2s linear infinite;
+}

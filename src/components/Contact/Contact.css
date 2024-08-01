@@ -1,0 +1,55 @@
+.connect{
+    width: 430px;
+    height: 350px;
+    font-size: 9.5rem;
+    color: var(--creame);
+    font-family: var(--American);
+    float: left;
+}
+.contact .container{
+    width: 85vw;
+}
+.contact .title{
+    color: #fff;
+}
+.social{
+    color: var( --Cocoa-Brown);
+    font-family: var(--American);
+    padding: 10px 15px 0 25px;
+    margin: 0pc 15px;
+    border: 2px solid var(--Cocoa-Brown);
+    background-color: var(--creame);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.arr{
+    transform: translateY(10%);
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+.social:hover{
+    background-color: var(--Cocoa-Brown);
+    border: 2px solid var(--creame);
+    color: var(--creame);
+    transition: 500ms;
+}
+.social:hover .arr{
+    animation: arrgo 0.5s linear 1;
+    overflow: hidden;
+}
+
+@keyframes arrgo {
+    0%{
+        transform: translate(-50%,50%);
+    }
+    50%{
+        transform: translate(50%,-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+    
+}
+
+

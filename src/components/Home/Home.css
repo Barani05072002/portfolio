@@ -1,0 +1,88 @@
+.home{
+    background: url(../../assets/pexels-fauxels-3184454.jpg) center no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+.hero-name{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-name{
+    margin: 3rem 0 3rem 8rem;
+}
+.hero-name,.hero-name::before{
+    width: 80vw;
+    height: 550px;
+}
+.hero-name h1,h2{
+    color: var(--orange);
+    z-index: 1;
+    width: 90%;
+    text-align: right;
+    font-family: var(--Ankh);
+}
+.hero-name h1{
+    font-size: 3.5rem;
+}
+.hero-name h2{
+    font-size: 2rem;
+}
+.highlight{
+    font-family: var(--American);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    color: var(--creame);
+}
+.hero-name::before{
+    content: "";
+    background-color: var(--smokey-black);
+    position: absolute; 
+    border-radius: 15px;
+}
+.home .menu{
+    width: 70px;
+    height: 70px;
+    background-color: var(--orange);
+    position: absolute;
+    border-radius: 50%;
+    bottom: 2%;
+    left: 2%;
+    font-size: 70px;
+    text-align: center;
+}
+.available{
+    color: var(--orange);
+    z-index: 1;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    font-size: 1.5rem;
+    font-family: var(--Ankh);
+    cursor: pointer;
+    font-weight: bold;
+}
+.available:hover{
+    text-decoration: underline var(--creame);
+}
+.available .dir{
+    display: none;
+    transition: 500ms;
+}
+.online{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--online);
+    animation: blink 1s infinite
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

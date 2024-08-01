@@ -1,0 +1,39 @@
+.nav{
+    background-color: #222;
+    height: 100vh;
+    width: 100vw;
+    font-size: 5rem;
+    position: relative;
+}
+.nav .close{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-color: var(--orange);
+}
+.nav ul{
+    margin: 2rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav ul li{
+    padding-left: 3rem;
+    list-style: none;
+    color: var(--orange);
+}
+.nav a{
+    color: #fff;
+    font-family: var(--Ankh);
+}
+.nav li:hover .arrow {
+    rotate: 45deg;
+    transition: 0.2s;
+}   
+.nav li:hover a{
+    text-decoration: underline var(--orange);
+}
